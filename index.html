@@ -21,10 +21,12 @@
   <div class="wrapper">
     <header class="header">
       <img class="header__figure-left figure-left-desktop" src="./assets/images/figure-left.svg" alt="Figure">
-      <img class="header__figure-left figure-left-mobile" src="./assets/images/figure-left-adaptive.svg" alt="Figure">
+      <img class="header__figure-left figure-left-tablet" src="./assets/images/figure-left-adaptive.svg" alt="Figure">
+      <img class="header__figure-left figure-left-mobile" src="./assets/images/figure-left-mobile.svg" alt="Figure">
       <a class="header__logo" href="index.html"><img src="./assets/images/logo.svg" alt="Logo"></a>
       <img class="header__figure-right figure-right-desktop" src="./assets/images/figure-right.svg" alt="Figure">
-      <img class="header__figure-right figure-right-mobile" src="./assets/images/figure-right-adaptive.svg" alt="Figure">
+      <img class="header__figure-right figure-right-tablet" src="./assets/images/figure-right-adaptive.svg" alt="Figure">
+      <img class="header__figure-right figure-right-mobile" src="./assets/images/figure-right-mobile.svg" alt="Figure">
     </header>
     <main class="main">
       <section class="content">
@@ -67,9 +69,9 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <form action="#" class="footer__item-input input-field" id="form" novalidate>
-          <input class="footer__input validate" id="email" type="email" placeholder="Enter your Email and get notified">
-          <button class="footer__input-button modal-trigger" type="submit">
+        <form action="#" class="footer__item-input input-group" id="form" novalidate>
+          <input class="footer__input form-control validate" id="email" type="email" placeholder="Enter your Email and get notified" aria-describedby="button-addon2" aria-label="Enter your Email and get notified">
+          <button class="footer__input-button modal-trigger" id="button-addon2" type="submit">
             <img src="./assets/images/arrow-right.png" alt="Arrow">
           </button>
           <div class="modal-container">
@@ -87,15 +89,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div id="modal" class="modal fade" tabindex="-1">
-              <div class="modal-content">
-                <h4 class="modal-title"></h4>
-                <p class="modal-text"></p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-              </div>
-            </div> -->
           </div>
         </form>
         <div class="footer__item-button">
