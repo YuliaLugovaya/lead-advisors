@@ -20,9 +20,11 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <img class="header__figure-left" src=".//assets/images/figure-left.svg" alt="Figure">
-      <img class="header__logo" src="./assets/images/logo.svg" alt="Logo">
-      <img class="header__figure-right" src="./assets/images/figure-right.svg" alt="Figure">
+      <img class="header__figure-left figure-left-desktop" src="./assets/images/figure-left.svg" alt="Figure">
+      <img class="header__figure-left figure-left-mobile" src="./assets/images/figure-left-adaptive.svg" alt="Figure">
+      <a class="header__logo" href="index.html"><img src="./assets/images/logo.svg" alt="Logo"></a>
+      <img class="header__figure-right figure-right-desktop" src="./assets/images/figure-right.svg" alt="Figure">
+      <img class="header__figure-right figure-right-mobile" src="./assets/images/figure-right-adaptive.svg" alt="Figure">
     </header>
     <main class="main">
       <section class="content">
@@ -31,28 +33,32 @@
         <div class="timer" id="countdown">
           <div class="timer__container">
             <div class="timer__item days"></div>
-            <div class="timer__background">Days</div>
+            <div class="timer__background timer__background-desktop">Days</div>
+            <div class="timer__background timer__background-mobile">DD</div>
           </div>
           <div class="colon">:</div>
           <div class="timer__container">
             <div class="timer__item hours"></div>
-            <div class="timer__background">Hours</div>
+            <div class="timer__background timer__background-desktop">Hours</div>
+            <div class="timer__background timer__background-mobile">HH</div>
           </div>
           <div class="colon">:</div>
           <div class="timer__container">
             <div class="timer__item minutes"></div>
-            <div class="timer__background">Minutes</div>
+            <div class="timer__background timer__background-desktop">Minutes</div>
+            <div class="timer__background timer__background-mobile">MM</div>
           </div>
           <div class="colon">:</div>
           <div class="timer__container">
             <div class="timer__item seconds"></div>
-            <div class="timer__background">Seconds</div>
+            <div class="timer__background timer__background-desktop">Seconds</div>
+            <div class="timer__background timer__background-mobile">SS</div>
           </div>
 
         </div>
         <div class="event">
-          <p class="text">Check our event page when you wait:</p>
-          <a class="event__button" href="/">
+          <p class="text-check">Check our event page when you wait:</p>
+          <a class="event__button" href="https://egorovagency.by/#main" target="_blank">
             <p class="event__button-text">Go to the event</p>
             <img src="./assets/images/arrow-right.png" alt="Arrow">
           </a>

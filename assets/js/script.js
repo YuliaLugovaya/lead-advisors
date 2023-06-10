@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
   async function formSend(e) {
     e.preventDefault();
 
-    if (input.classList.contains('valid')) {
+    let error = formValidate(form);
+
+    if (input.classList.contains('valid') && error === 0) {
       try {
         let response = await fetch("https://httpbin.org/post",
           {
@@ -86,34 +88,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // function formValidate(form) {
-  //   let error = 0;
-  //   formRemoveError(input);
-  //   if (emailTest(input)) {
-  //     formAddError(input)
-  //     error++;
-  //   }
-  //   if (input.classList.contains('valid')) {
-  //     error = 0;
-  //   }
-  //   console.log(error);
-  //   return error;
+  function formValidate(form) {
+    let error = 0;
+    formRemoveError(input);
+    if (emailTest(input)) {
+      formAddError(input)
+      error++;
+    }
+    if (input.value === '') {
+      formAddError(input);
+      error++;
+    }
+    console.log(error);
+    return error;
 
-  // }
+  }
 
-  // function formAddError(input) {
-  //   input.parentElement.classList.add('_error');
-  //   input.classList.add('_error');
-  // }
+  function formAddError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+  }
 
-  // function formRemoveError(input) {
-  //   input.parentElement.classList.remove('_error');
-  //   input.classList.remove('_error');
-  // }
+  function formRemoveError(input) {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+  }
 
-  // function emailTest(input) {
-  //   return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-  // }
+  function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+  }
 })
 
 

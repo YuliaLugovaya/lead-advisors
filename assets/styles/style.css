@@ -22,6 +22,14 @@ body {
   margin: 110px auto 0 auto;
 }
 
+.figure-left-mobile {
+  display: none;
+}
+
+.figure-right-mobile {
+  display: none;
+}
+
 .header__figure-left,
 .header__figure-right {
   position: absolute;
@@ -53,7 +61,8 @@ body {
   opacity: 0.39;
 }
 
-.text {
+.text,
+.text-check {
   margin: 0 auto;
   width: 423px;
   font-size: 18px;
@@ -100,6 +109,10 @@ body {
   color: #FFFFFF;
 }
 
+.timer__background-mobile {
+  display: none;
+}
+
 .event {
   display: flex;
   flex-direction: column;
@@ -131,7 +144,6 @@ body {
 }
 
 .footer__container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1740px;
@@ -167,7 +179,7 @@ body {
   margin: 0;
 }
 
-.input-field input[type=email].invalid {
+.footer__input._error {
   border-bottom: 1px solid #000;
   box-shadow: 0 0 15px red;
 }
@@ -255,143 +267,104 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1260px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+  }
 
+  .figure-left-mobile {
+    display: block;
+  }
 
+  .figure-left-desktop {
+    display: none;
+  }
 
+  .figure-right-mobile {
+    display: block;
+  }
 
+  .figure-right-desktop {
+    display: none;
+  }
 
+  .title {
+    margin: 168px 0 20px 0;
+    font-size: 36px;
+  }
 
+  .text {
+    width: 286px;
+    font-size: 16px;
+  }
 
+  .timer {
+    margin: 40px 0;
+  }
 
+  .timer__item,
+  .colon {
+    font-size: 36px;
+  }
 
+  .timer__background-mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .timer__background-desktop {
+    display: none;
+  }
 
+  .timer__background {
+    width: 64px;
+    height: 40px;
+    background-image: url(../images/wave-adaptive.svg);
+    font-size: 12px;
+  }
 
+  .timer__item {
+    width: 64px;
+  }
 
+  .timer__container {
+    width: 64px;
+  }
 
+  .colon {
+    padding: 0 15px;
+  }
 
+  #email {
+    width: 360px;
+    height: 41px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
 
+  .footer__input-button {
+    width: 33px;
+    height: 33px;
+    right: 40px;
+  }
 
+  .event__button-text {
+    font-size: 16px;
+  }
 
+  .footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    margin: 30px 0 15px 0;
+  }
 
-
-
-
-
-/* .gallery {
-  height: -50%;
 }
-
-.accordion {
-  padding: 40px;
-  width: 682px;
-  transform: rotate(-90deg);
-  position: relative;
-  left: 32%; */
-/* bottom: 20%; */
-/* top: -20%;
-}
-
-.accordion-item { */
-/* height: 682px; */
-/* }
-
-#collapseOne,
-#collapseTwo,
-#collapseThree,
-#collapseFour,
-#collapseFive,
-#collapseSix,
-#collapseSeven,
-#collapseEight {
-  height: 995px;
-  width: 683px;
-} */
-
-/* .accordion-body {
-  background-image: url(../images/IMG_9678\ 1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 995px;
-  width: 683px;
-  display: flex; */
-/* flex-direction: column; */
-/* justify-content: flex-end; */
-/* transform: rotate(90deg) translate(155px, 155px);
-} */
-
-/* .accordion-body-text {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0 25px 40px;
-  height: 683px;
-  width: 364px;
-  background: rgba(18, 18, 18, 0.8);
-  backdrop-filter: blur(20px);
-}
-
-.accordion-body-text__number {
-  align-self: center;
-  position: relative;
-  left: 20px;
-  overflow: hidden;
-  font-size: 152px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.04);
-  margin-bottom: 35px;
-  padding-left: 50px;
-
-}
-
-.accordion-body-text__title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 120%;
-  color: #FFFFFF;
-}
-
-.accordion-body-text__text {
-  font-size: 16px;
-  line-height: 150%;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 45px;
-} */
-
-/* .accordion-body-text__btn {
-  width: 169px;
-  height: 44px;
-  padding: 10px 24px;
-  border: 2px solid #FFFFFF;
-  border-left: 5px solid #FFFFFF;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 120%;
-  color: #FFFFFF;
-  text-decoration: none;
-
-} */
-
-/* .accordion-header {
-  background: #162C4E;
-  width: 683px;
-/* transform: rotate(90deg);
-} */
-
-/* .accordion-button {
-  background: #162C4E;
-}
-
-.accordion-header__title {
-  color: #FFFFFF;
-  font-size: 32px;
-  padding: 0 40px 0 16px;
-  margin: 0;
-}
-
-.accordion-header__subtitle {
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 24px;
-  padding: 16px 0;
-  margin: 0;
-} */
