@@ -21,7 +21,6 @@ body {
 .header__logo {
   align-self: center;
   margin: 110px auto 0 auto;
-
   position: relative;
   animation: showElement 1s;
 }
@@ -85,7 +84,6 @@ body {
 
 }
 
-
 .header__figure-right {
   right: 0
 }
@@ -117,16 +115,15 @@ body {
 
 .title {
   margin: 92px 0 8px 0;
+  position: relative;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 104%;
   text-align: center;
   text-transform: uppercase;
   color: #162C4E;
   opacity: 0.39;
   visibility: hidden;
-
-  position: relative;
   animation: showElementTitle 1s 0.5s;
 }
 
@@ -150,12 +147,11 @@ body {
   visibility: hidden;
 }
 
-
 .text,
 .text-check {
   margin: 0 auto;
   width: 423px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
@@ -165,9 +161,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 32px 0 70px 0;
-  visibility: hidden;
-
   position: relative;
+  visibility: hidden;
   animation: showElement 1s 0.7s;
 }
 
@@ -178,15 +173,15 @@ body {
 .timer__item,
 .colon {
   font-weight: 600;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 100%;
   color: #162C4E;
 }
 
 .timer__item {
   width: 132px;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .timer__background {
@@ -198,7 +193,7 @@ body {
   height: 54.12px;
   background-image: url(../images/wave.svg);
   background-repeat: no-repeat;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 100%;
   color: #FFFFFF;
 }
@@ -212,9 +207,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-
   position: relative;
+  visibility: hidden;
   animation: showElement 1s 0.9s;
 }
 
@@ -225,12 +219,11 @@ body {
   width: 240px;
   height: 60px;
   margin: 12px 0 156px 0;
+  position: relative;
   background: #1D4169;
   border-radius: 40px;
   text-decoration: none;
   gap: 30px;
-
-  position: relative;
   transition: all 500ms ease;
 }
 
@@ -251,7 +244,7 @@ body {
 }
 
 .event__button-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #FFFFFF;
 }
@@ -269,14 +262,14 @@ body {
 }
 
 .footer__container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   justify-content: space-between;
   align-items: center;
   max-width: 1740px;
   margin: 65px auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
 }
 
 .footer__item-input {
@@ -335,11 +328,11 @@ body {
   width: 440px;
   height: 59px;
   padding-left: 27px;
+  margin: 0;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 40px;
   outline: none;
-  margin: 0;
 }
 
 .footer__input._error {
@@ -348,15 +341,15 @@ body {
 }
 
 .footer__input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 43px;
   height: 43px;
   position: absolute;
   z-index: 50;
   right: 10px;
   top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #DF2224;
   border-radius: 50px;
   border: none;
@@ -394,7 +387,7 @@ body {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 104%;
   text-align: center;
   text-transform: uppercase;
@@ -407,18 +400,18 @@ body {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
 
 #btnClose {
-  background: #1D4169;
-  border-radius: 40px;
   width: 200px;
   height: 60px;
   margin-bottom: 70px;
+  background: #1D4169;
+  border-radius: 40px;
 }
 
 #modalFooter {
@@ -433,17 +426,16 @@ body {
 }
 
 .gallery__title {
+  position: relative;
   margin: 110px 0 40px 0;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 104%;
   text-align: center;
   text-transform: uppercase;
   color: #162C4E;
   opacity: 0.39;
   visibility: hidden;
-
-  position: relative;
   animation: showElementTitle 1s 0.5s;
 }
 
@@ -458,21 +450,21 @@ body {
 }
 
 .accordion_item {
-  list-style: none;
-  width: 85px;
-  height: 682px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s linear;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  width: 85px;
+  height: 682px;
+  list-style: none;
   border-right: 5px solid #FFFFFF;
   border-bottom: 3px solid #DF2224;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
 
 .accordion_item_one {
@@ -517,14 +509,14 @@ body {
   top: 300px;
   width: 570px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 100%;
   color: #FFFFFF;
   transform: rotate(-90deg);
 }
 
 .icon-number {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 100%;
   letter-spacing: -0.03em;
   color: #FFFFFF;
@@ -541,7 +533,7 @@ body {
   background-size: cover;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   overflow: hidden;
   transition: width 1s ease;
@@ -598,34 +590,34 @@ body {
 }
 
 .accordion_menu-number {
-  font-size: 380px;
-  color: rgba(255, 255, 255, 0.04);
   position: relative;
   top: 20%;
   right: 60%;
+  font-size: 23.75rem;
+  color: rgba(255, 255, 255, 0.04);
 }
 
 .content-accordion {
-  font-size: 13px;
-  font-weight: 300;
   margin: 10px 0;
+  font-size: 0.8125rem;
+  font-weight: 300;
 }
 
 .view_more {
-  margin: 20px 0;
-  color: #FFFFFF;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 213px;
   height: 62px;
+  position: relative;
+  margin: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
   text-decoration: none;
   gap: 30px;
   border: 2px solid #FFFFFF;
   border-left: 5px solid #FFFFFF;
   transition: all 500ms ease;
-  position: relative;
 }
 
 .view_more:before {
@@ -645,7 +637,7 @@ body {
 
 .view_more-text {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 @media screen and (max-width: 1900px) {
@@ -676,7 +668,7 @@ body {
 
 @media screen and (max-width: 1350px) {
   .title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .gallery__title {
@@ -706,7 +698,7 @@ body {
     width: 360px;
     height: 41px;
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   #form {
@@ -730,6 +722,19 @@ body {
   .accordion_wrap ul li.active .accordion_menu {
     width: 1000px;
     height: 700px;
+    animation: showMenu 0.2s;
+  }
+
+  @keyframes showMenu {
+
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+
   }
 
   .accordion_wrap ul {
@@ -773,15 +778,15 @@ body {
   }
 
   .view_more-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .accordion_menu-number {
-    font-size: 152px;
-    color: rgba(255, 255, 255, 0.04);
     position: relative;
     top: 10%;
     right: -90%;
+    font-size: 9.5rem;
+    color: rgba(255, 255, 255, 0.04);
   }
 }
 
@@ -805,7 +810,7 @@ body {
 
   .title {
     margin: 168px 0 20px 0;
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .gallery__title {
@@ -814,11 +819,11 @@ body {
 
   .text {
     width: 286px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .text-check {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .timer {
@@ -827,7 +832,7 @@ body {
 
   .timer__item,
   .colon {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .timer__background-mobile {
@@ -846,7 +851,7 @@ body {
     width: 64px;
     height: 40px;
     background-image: url(../images/wave-adaptive.svg);
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .timer__item {
@@ -862,9 +867,8 @@ body {
   }
 
   .event__button-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
-
 }
 
 @media screen and (max-width: 1150px) {
@@ -931,11 +935,11 @@ body {
 
   .icon-text {
     width: 550px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .icon-number {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .accordion_menu-number {
@@ -962,11 +966,11 @@ body {
   }
 
   .title-accordion {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .content-accordion {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .view_more {
@@ -1001,19 +1005,18 @@ body {
 
   .icon-text {
     width: 400px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .icon-number {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .accordion_menu-number {
     top: 25%;
     right: -90%;
-    font-size: 80px;
+    font-size: 5rem;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -1066,7 +1069,7 @@ body {
   #email {
     width: 300px;
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   #form {
@@ -1129,5 +1132,4 @@ body {
   .accordion_menu-number {
     right: -80%;
   }
-
 }

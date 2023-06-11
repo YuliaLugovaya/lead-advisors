@@ -43,14 +43,11 @@ const deadline = "July 24 2023 00:00:00 GMT+0300";
 initializeClock('countdown', deadline);
 
 
-
-
 //form
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('#form');
   const input = document.querySelector('#email');
-  const btn = document.querySelector('.footer__input-button');
   const modalTitle = document.querySelector('.modal-title');
   const modalText = document.querySelector('.modal-body');
   form.addEventListener('submit', formSend);
@@ -101,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     console.log(error);
     return error;
-
   }
 
   function formAddError(input) {
@@ -122,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // accordion
 
-let li_items = document.querySelectorAll(".accordion_wrap ul li");
-let ul = document.querySelector(".accordion_wrap ul");
+const li_items = document.querySelectorAll(".accordion_wrap ul li");
+const ul = document.querySelector(".accordion_wrap ul");
 
 li_items.forEach(function (item) {
   item.addEventListener("click", function () {
@@ -135,7 +131,7 @@ li_items.forEach(function (item) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  let first = li_items[0];
+  const first = li_items[0];
   first.classList.add("active");
 });
 
@@ -146,7 +142,7 @@ const btnFooter = document.querySelector('.footer__item-button');
 const gallery = document.querySelector('.gallery');
 btnFooter.addEventListener('click', () => {
   gallery.style.display = 'block';
-  setTimeout(function() {
+  setTimeout(function () {
     document.querySelector('.gallery__title').style.visibility = 'visible';
   }, 500);
 })
@@ -154,17 +150,17 @@ btnFooter.addEventListener('click', () => {
 
 //animation
 
-setTimeout(function() {
+setTimeout(function () {
   document.querySelector('.title').style.visibility = 'visible';
   document.querySelector('.text').style.visibility = 'visible';
   document.querySelector('.header__figure-left').style.visibility = 'visible';
   document.querySelector('.header__figure-right').style.visibility = 'visible';
 }, 500);
 
-setTimeout(function() {
+setTimeout(function () {
   document.querySelector('.timer').style.visibility = 'visible';
 }, 700);
 
-setTimeout(function() {
+setTimeout(function () {
   document.querySelector('.event').style.visibility = 'visible';
 }, 900);
