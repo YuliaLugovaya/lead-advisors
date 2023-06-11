@@ -139,3 +139,10 @@ document.addEventListener('DOMContentLoaded', function () {
   first.classList.add("active");
 });
 
+// link for accordion
+
+const btnFooter = document.querySelector('.footer__item-button');
+const gallery = document.querySelector('.gallery');
+btnFooter.addEventListener('click', () => {
+  gallery.style.display = 'block';
+})
