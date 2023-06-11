@@ -153,8 +153,12 @@ btnFooter.addEventListener('click', () => {
 setTimeout(function () {
   document.querySelector('.title').style.visibility = 'visible';
   document.querySelector('.text').style.visibility = 'visible';
-  document.querySelector('.header__figure-left').style.visibility = 'visible';
-  document.querySelector('.header__figure-right').style.visibility = 'visible';
+  document.querySelector('.figure-left-desktop').style.visibility = 'visible';
+  document.querySelector('.figure-left-tablet').style.visibility = 'visible';
+  document.querySelector('.figure-left-mobile').style.visibility = 'visible';
+  document.querySelector('.figure-right-desktop').style.visibility = 'visible';
+  document.querySelector('.figure-right-tablet').style.visibility = 'visible';
+  document.querySelector('.figure-right-mobile').style.visibility = 'visible';
 }, 500);
 
 setTimeout(function () {
