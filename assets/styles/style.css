@@ -667,7 +667,8 @@ body {
 }
 
 @media screen and (max-width: 1350px) {
-  .title {
+  .title,
+  .gallery__title {
     font-size: 3rem;
   }
 
@@ -815,6 +816,7 @@ body {
 
   .gallery__title {
     margin: 60px 0 20px 0;
+    font-size: 2.25rem;
   }
 
   .text {
