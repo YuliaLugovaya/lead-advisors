@@ -139,10 +139,32 @@ document.addEventListener('DOMContentLoaded', function () {
   first.classList.add("active");
 });
 
+
 // link for accordion
 
 const btnFooter = document.querySelector('.footer__item-button');
 const gallery = document.querySelector('.gallery');
 btnFooter.addEventListener('click', () => {
   gallery.style.display = 'block';
+  setTimeout(function() {
+    document.querySelector('.gallery__title').style.visibility = 'visible';
+  }, 500);
 })
+
+
+//animation
+
+setTimeout(function() {
+  document.querySelector('.title').style.visibility = 'visible';
+  document.querySelector('.text').style.visibility = 'visible';
+  document.querySelector('.header__figure-left').style.visibility = 'visible';
+  document.querySelector('.header__figure-right').style.visibility = 'visible';
+}, 500);
+
+setTimeout(function() {
+  document.querySelector('.timer').style.visibility = 'visible';
+}, 700);
+
+setTimeout(function() {
+  document.querySelector('.event').style.visibility = 'visible';
+}, 900);

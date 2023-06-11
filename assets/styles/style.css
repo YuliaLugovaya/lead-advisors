@@ -21,6 +21,9 @@ body {
 .header__logo {
   align-self: center;
   margin: 110px auto 0 auto;
+
+  position: relative;
+  animation: showElement 1s;
 }
 
 .figure-left-tablet {
@@ -44,6 +47,45 @@ body {
   position: absolute;
 }
 
+.header__figure-left {
+  animation: showFigureLeft 1s 0.5s;
+  visibility: hidden;
+}
+
+.header__figure-right {
+  animation: showFigureRight 1s 0.5s;
+  visibility: hidden;
+}
+
+@keyframes showFigureLeft {
+
+  from {
+    top: -100%;
+    left: -100%;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+  }
+
+}
+
+@keyframes showFigureRight {
+
+  from {
+    top: -100%;
+    right: -100%;
+  }
+
+  to {
+    top: 0;
+    right: 0;
+  }
+
+}
+
+
 .header__figure-right {
   right: 0
 }
@@ -59,6 +101,20 @@ body {
   margin: 0 auto;
 }
 
+@keyframes showElement {
+
+  from {
+    top: -5%;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+
+}
+
 .title {
   margin: 92px 0 8px 0;
   font-weight: 700;
@@ -68,7 +124,32 @@ body {
   text-transform: uppercase;
   color: #162C4E;
   opacity: 0.39;
+  visibility: hidden;
+
+  position: relative;
+  animation: showElementTitle 1s 0.5s;
 }
+
+@keyframes showElementTitle {
+
+  from {
+    top: -5%;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 0.39;
+  }
+
+}
+
+.text {
+  position: relative;
+  animation: showElement 1s 0.5s;
+  visibility: hidden;
+}
+
 
 .text,
 .text-check {
@@ -84,6 +165,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 32px 0 70px 0;
+  visibility: hidden;
+
+  position: relative;
+  animation: showElement 1s 0.7s;
 }
 
 .timer__container {
@@ -127,6 +212,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+
+  position: relative;
+  animation: showElement 1s 0.9s;
 }
 
 .event__button {
@@ -345,6 +434,17 @@ body {
 
 .gallery__title {
   margin: 110px 0 40px 0;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+  opacity: 0.39;
+  visibility: hidden;
+
+  position: relative;
+  animation: showElementTitle 1s 0.5s;
 }
 
 .wrapper-accordion {
